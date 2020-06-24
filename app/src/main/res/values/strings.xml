@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SocketTest</string>
+
+    <string-array name="chat_rooms">
+        <item>Anime</item>
+        <item>Coding</item>
+        <item>F1 races</item>
+        <item>Drugs</item>
+        <item>DC VS Marvel</item>
+    </string-array>
+    <string name="title_activity_chat_room">ChatRoom</string>
+</resources>

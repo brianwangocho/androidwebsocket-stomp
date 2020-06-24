@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_name"
+        android:text="CHAT ROOMS"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_centerVertical="true"
+        android:id="@+id/form">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:id="@+id/username"
+            android:hint="enter user name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:transitionName="username-transition"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_margin="6dp"
+            android:id="@+id/room_option"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:dropDownWidth="match_parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="join chat"
+            android:id="@+id/join_chat"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
